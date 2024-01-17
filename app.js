@@ -56,6 +56,9 @@ let db;
 try {
 
     const client = await MongoClient.connect('mongodb+srv://cruz:coursework2password@cluster0.iakaynp.mongodb.net/dopo?retryWrites=true&w=majority');
+    // create .env file for security purpose and put the connection there.
+    //You used to write clean code but this one is somehow below your standard. restructure your folders well. 
+    
     db = client.db('dopo')
 
     const timeStamp = getCurrentTimeStamp()

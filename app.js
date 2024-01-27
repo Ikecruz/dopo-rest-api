@@ -74,7 +74,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res, next) => {
-    res.send("Backend ready")
+    res.send("Get Activities: /activies")
 })
 
 // GET ACTIVITIES
